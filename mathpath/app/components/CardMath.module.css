@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #efe9e4;
+  color: #000;
+}
+
+.func {
+  color: #ffa063;
+}
+
+.eq {
+  color: #63a6ff;
+}
+
+.quad {
+  color: #ff63a5;
+}
