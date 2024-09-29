@@ -1,10 +1,7 @@
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #efe9e4;
+.math {
+  font-size: 1.2em;
   color: #000;
+  margin: 2% 0;
 }
 
 .func {

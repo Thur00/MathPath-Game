@@ -31,19 +31,28 @@ export default function MathComponent(props) {
     loadMathJax();
 
     return () => {
-      // Limpeza: remove o script quando o componente for desmontado
       if (script && document.head.contains(script)) {
         document.head.removeChild(script);
       }
     };
   }, [props.formula]);
 
-  let estilo
+  let estilo;
   switch (props.tipo) {
-    case "func": return estilo = "styles.func";
-    case "eq": return estilo = "styles.eq";
-    case "quad": return estilo = "styles.quad";
+    case "func":
+      estilo = "func";
+      break;
+    case "eq":
+      estilo = "eq";
+      break;
+    case "quad":
+      estilo = "quad";
+      break;
+    default:
+      estilo = ""; // Caso não haja um valor correspondente
   }
 
-  return <div className={styles.card}>{props.formula}</div>;
+  return (
+    <div className={`${styles.math} ${styles[estilo]}`}>{props.formula}</div>
+  );
 }
