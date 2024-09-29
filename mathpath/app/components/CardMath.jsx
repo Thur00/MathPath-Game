@@ -53,6 +53,6 @@ export default function MathComponent(props) {
   }
 
   return (
-    <div className={`${styles.math} ${styles[estilo]}`}>{props.formula}</div>
+    <div className={`${styles.math} ${styles[estilo]}`}>{props.conta}</div>
   );
 }
