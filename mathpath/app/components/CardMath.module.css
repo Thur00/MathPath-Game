@@ -1,0 +1,17 @@
+.math {
+  font-size: 1.2em;
+  color: #000;
+  margin: 2% 0;
+}
+
+.func {
+  color: #ffa063;
+}
+
+.eq {
+  color: #63a6ff;
+}
+
+.quad {
+  color: #ff63a5;
+}

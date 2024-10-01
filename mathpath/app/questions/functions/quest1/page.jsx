@@ -1,8 +1,8 @@
-import Card from "./components/CardRes";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Card from "@/app/components/CardRes";
+import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 
-export default function Home() {
+export default function Quest1() {
   const formulaTeste = `$$x = {-b \\pm \\sqrt{b^2 - 4 \\times a \\times c} \\over 2a}$$`;
   const tipo = "func";
 
