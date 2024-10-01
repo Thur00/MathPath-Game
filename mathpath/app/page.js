@@ -1,4 +1,3 @@
-import MathComponent from "./components/CardMath";
 import Card from "./components/CardRes";
 import Footer from "./components/Footer";
 import Header from "./components/Header";

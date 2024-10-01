@@ -2,20 +2,19 @@ import Image from "next/image";
 import styles from "./Header.module.css";
 
 const Header = (props) => {
-    
   let imgURL;
   switch (props.tipo) {
     case "func":
       imgURL = "https://nextjs.org/icons/next.svg";
       break;
     case "eq":
-      imgURL = "";
+      imgURL = "https://nextjs.org/icons/next.svg";
       break;
     case "quad":
-      imgURL = "";
+      imgURL = "https://nextjs.org/icons/next.svg";
       break;
     default:
-      imgURL = "";
+      imgURL = "https://nextjs.org/icons/next.svg";
   }
 
   return (
