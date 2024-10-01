@@ -20,7 +20,7 @@ export default function Quest1() {
     {
       name: "formula3",
       title: "E então isolar o x:",
-      content: `\\(x = 8/2\\)`,
+      content: `\\(x = \\frac{8}{2}\\)`,
     },
     { name: "formula4", title: "Calculando:", content: `\\(x = 4\\)` },
   ];
