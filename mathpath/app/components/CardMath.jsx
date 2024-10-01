@@ -49,7 +49,7 @@ export default function MathComponent(props) {
       estilo = "quad";
       break;
     default:
-      estilo = ""; // Caso não haja um valor correspondente
+      estilo = "";
   }
 
   return (

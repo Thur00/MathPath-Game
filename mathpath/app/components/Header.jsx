@@ -1,19 +1,35 @@
-import Image from "next/image"
+import Image from "next/image";
+import styles from "./Header.module.css";
 
+const Header = (props) => {
+    
+  let imgURL;
+  switch (props.tipo) {
+    case "func":
+      imgURL = "https://nextjs.org/icons/next.svg";
+      break;
+    case "eq":
+      imgURL = "";
+      break;
+    case "quad":
+      imgURL = "";
+      break;
+    default:
+      imgURL = "";
+  }
 
-const Header = () => {
-    return (
-        <header className={styles.header}>
-            <Image 
-                className={styles.logo}
-                src="https://nextjs.org/icons/next.svg"
-                alt="MathPath logo"
-                width={180}
-                height={38}
-                priority
-            />
-        </header>
-    )
-}
+  return (
+    <header className={styles.header}>
+      <Image
+        className={styles.logo}
+        src={imgURL}
+        alt="MathPath logo"
+        width={100}
+        height={50}
+        priority
+      />
+    </header>
+  );
+};
 
-export default Header
+export default Header;
