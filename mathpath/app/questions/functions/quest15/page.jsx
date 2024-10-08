@@ -13,8 +13,8 @@ export default function Quest3() {
     },
     {
       id: 2,
-      title: "Em seguida realize a seguinte manipulação:",
-      content: `\\(-x^2 + 2x + 8 \\textcolor{red}{- 5} = 5 \\textcolor{red}{- 5}\\)`,
+      title: "Em seguida subtraia 5 de ambos os lados:",
+      content: `\\(-x^2 + 2x + 8 = 5 \\)`,
     },
     {
       id: 3,
@@ -23,7 +23,7 @@ export default function Quest3() {
     {
       id: 4,
       title: "Aplicando a fórmula de Bhaskara",
-      content: `\\(\\textcolor{black}{se}\\) \\(a = -1\\), \\(b = 2\\) e \\(c = -2 \\)`,
+      content: `\\(\\text{se }\\) \\(a = -1\\), \\(b = 2\\) e \\(c = -2 \\)`,
     },
     {
       id: 5,
