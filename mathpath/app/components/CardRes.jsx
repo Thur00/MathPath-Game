@@ -8,7 +8,7 @@ const Card = (props) => {
     <div className={styles.card}>
       {contas.map((conta) => {
         return (
-          <span className={styles.span} key={conta.name}>
+          <span className={styles.span} key={conta.id}>
             <p>{conta.title}</p>
             <MathComponent tipo={tipo} conta={conta.content} />
           </span>
