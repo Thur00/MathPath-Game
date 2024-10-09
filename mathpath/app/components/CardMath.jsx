@@ -53,6 +53,15 @@ export default function MathComponent(props) {
   }
 
   return (
-    <div className={`${styles.math} ${styles[estilo]}`}>{props.conta}</div>
+    <>
+      <Head>
+        <script
+          id="MathJax-script"
+          async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+        ></script>
+      </Head>
+      <div className={`${styles.math} ${styles[estilo]}`}>{props.conta}</div>
+    </>
   );
 }

@@ -23,7 +23,7 @@ export default function Quest3() {
     {
       id: 4,
       title: "Aplicando a fórmula de Bhaskara",
-      content: `\\(\\text{se }\\) \\(a = -1\\), \\(b = 2\\) e \\(c = -2 \\)`,
+      content: `se \\(a = -1\\), \\(b = 2\\) e \\(c = -2 \\)`,
     },
     {
       id: 5,
