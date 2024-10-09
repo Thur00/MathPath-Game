@@ -1,5 +1,9 @@
-import MathComponent from "./CardMath";
 import styles from "./CardRes.module.css";
+import dynamic from "next/dynamic";
+
+const MathComponent = dynamic(() => import("./CardMath"), {
+  ssr: false, // Desativa a renderização do lado do servidor para este componente
+});
 
 const Card = (props) => {
   const { tipo, contas } = props;
