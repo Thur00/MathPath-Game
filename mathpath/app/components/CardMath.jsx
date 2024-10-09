@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { mathJaxConfig } from "../mathjax.config";
 import styles from "./CardMath.module.css";
+import Head from "next/head";
 
 export default function MathComponent(props) {
   useEffect(() => {
