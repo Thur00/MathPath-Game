@@ -35,7 +35,7 @@ export default function Quest3() {
     },
     {
       id: 7,
-      content: `\\(x = \\frac{-2 \\pm \\sqrt{16}}{-2}\\)`,
+      content: `\\(x = \frac{-2 \\pm \\sqrt{16}}{-2}\\)`,
     },
     {
       id: 8,
