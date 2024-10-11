@@ -1,3 +1,4 @@
+//CardRes.jsx
 import styles from "./CardRes.module.css";
 import dynamic from "next/dynamic";
 

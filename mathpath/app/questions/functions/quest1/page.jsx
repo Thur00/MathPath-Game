@@ -1,3 +1,4 @@
+//Page.jsx
 import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
