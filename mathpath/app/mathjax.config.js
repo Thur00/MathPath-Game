@@ -12,10 +12,10 @@ export const mathJaxConfig = {
     loader: {
       load: ["input/tex", "output/chtml"],
     },
-    packages: ["base", "ams", "html", "color", "noerrors", "noundefined"],
+    packages: ["base", "ams", "html", "noerrors", "noundefined"],
   },
   chtml: {
-    fontURL: "./fonts", // Caminho relativo para as fontes locais
+    fontURL: "/fonts", // Caminho relativo para as fontes locais
     scale: 1.1, // Escala para aumentar/diminuir o tamanho das fórmulas
     minScale: 0.5, // Escala mínima permitida
     matchFontHeight: true, // Ajusta o tamanho da fórmula ao tamanho do texto ao redor

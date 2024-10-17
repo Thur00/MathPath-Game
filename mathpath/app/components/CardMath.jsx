@@ -13,18 +13,17 @@ export default function MathComponent(props) {
     const loadMathJax = async () => {
       if (!window.MathJax) {
         script = document.createElement("script");
-        script.src =
-          "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
+        script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js";
         script.async = true;
-        document.head.appendChild(script);
 
         script.onload = () => {
           window.MathJax = MathJax;
           MathJax.config = mathJaxConfig;
           MathJax.startup.promise = MathJax.startup.promise
             .then(() => MathJax.typesetPromise())
-            .catch((err) => console.error(err));
+            .catch((err) => console.error("Erro ao processar MathJax:", err));
         };
+        document.head.appendChild(script);
       } else {
         MathJax.typesetPromise();
       }
@@ -37,7 +36,7 @@ export default function MathComponent(props) {
         document.head.removeChild(script);
       }
     };
-  }, [props.formula]);
+  }, [props.conta]);
 
   let estilo;
   switch (props.tipo) {
