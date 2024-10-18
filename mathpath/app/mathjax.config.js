@@ -1,4 +1,8 @@
 // mathjax.config.js
+import getFontPath from "./utils/getFontPath";
+
+const fontPath = getFontPath();
+
 export const mathJaxConfig = {
   tex: {
     inlineMath: [
@@ -15,7 +19,7 @@ export const mathJaxConfig = {
     packages: ["base", "ams", "html", "noerrors", "noundefined"],
   },
   chtml: {
-    fontURL: "/fonts", // Caminho relativo para as fontes locais
+    fontURL: fontPath, // Define o caminho das fontes dinamicamente
     scale: 1.1, // Escala para aumentar/diminuir o tamanho das fórmulas
     minScale: 0.5, // Escala mínima permitida
     matchFontHeight: true, // Ajusta o tamanho da fórmula ao tamanho do texto ao redor

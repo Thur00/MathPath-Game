@@ -16,7 +16,7 @@ export default function MathComponent(props) {
         MathJax.typesetPromise().catch((err) =>
           console.error("Erro ao processar MathJax:", err)
         );
-      }, 100); // Ajuste o tempo conforme necessário para garantir que todos os componentes estejam montados
+      }, 100); // Ajustar o tempo conforme necessário para garantir que todos os componentes estejam montados
 
       return () => clearTimeout(timeoutId);
     }
