@@ -21,7 +21,7 @@ export default function Quest1() {
     {
       id: 3,
       title: "E então isolar o x:",
-      content: `\\(x = \\ffrac{8}{2}\\)`,
+      content: `\\(x = \ffrac{8}{2}\\)`,
     },
     { id: 4, title: "Calculando:", content: `\\(x = 4\\)` },
   ];
