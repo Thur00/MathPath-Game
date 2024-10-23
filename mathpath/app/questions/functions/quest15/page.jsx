@@ -47,13 +47,113 @@ export default function Quest3() {
       title: "Solução 2:",
       content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
     },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
+    {
+      id: 1111,
+      title: "aaaaaa:",
+      content: '\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)',
+    },
   ];
+
+  let title;
+  switch (tipo) {
+    case "func":
+      title = "Função:";
+      break;
+    case "eq":
+      title = "Equação de 1° Grau:";
+      break;
+    case "quad":
+      title = "Equação de 2° Grau:";
+      break;
+    default:
+      title = "";
+  }
 
   return (
     <main className={tipo}>
       <Header tipo={tipo} />
       <div className="div">
-        <h1>Equação Quadrática:</h1>
+        <h1>{title}</h1>
         <Card tipo={tipo} contas={contas} />
       </div>
       <Footer tipo={tipo} />
