@@ -11,12 +11,12 @@ export default function Quest1() {
     {
       id: 1,
       title: "Para encontrar o valor de x em",
-      content: `\\(f(x) = 2x + 3 = 11\\)`,
+      content: '\\(f(x) = 2x + 3 = 11\\)',
     },
     {
       id: 2,
       title: "Devemos tirar três dos dois lados:",
-      content: `\\(2x = 11 - 3\\)`,
+      content: '\\(2x = 11 - 3\\)',
     },
     {
       id: 3,
