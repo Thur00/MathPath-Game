@@ -1,4 +1,6 @@
 import styles from "./Footer.module.css";
+import Image from "next/image";
+import preto from "../src/Mathpath-Title-preto.png"
 
 const Footer = (props) => {
   let estilo;
@@ -27,7 +29,14 @@ const Footer = (props) => {
 
   return (
     <footer className={`${styles.footer} ${styles[estilo]}`}>
-      <h3>MATHPATH</h3>
+      <Image
+        className={styles.logo}
+        src={preto}
+        alt="MathPath logo"
+        width={110.5}
+        height={32}
+        priority
+      />
       <p>Jogo educativo de matemática</p>
     </footer>
   );
