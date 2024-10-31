@@ -40,8 +40,8 @@ const Header = (props) => {
         className={styles.logo}
         src={imgURL}
         alt="MathPath logo"
-        width={110.5}
-        height={32}
+        width={165.75}
+        height={48}
         priority
       />
     </header>
