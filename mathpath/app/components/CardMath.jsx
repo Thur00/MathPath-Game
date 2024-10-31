@@ -22,24 +22,35 @@ export default function MathComponent(props) {
     }
   }, [formattedContent]);
 
-  let estilo;
+  let tipo;
   switch (props.tipo) {
     case "func":
-      estilo = "func";
+      tipo = "func";
       break;
     case "eq":
-      estilo = "eq";
+      tipo = "eq";
       break;
     case "quad":
-      estilo = "quad";
+      tipo = "quad";
+      break;
+    case "funce":
+      tipo = "func";
+      break;
+    case "eqe":
+      tipo = "eq";
+      break;
+    case "quade":
+      tipo = "quad";
       break;
     default:
-      estilo = "";
+      tipo = "";
   }
+
+  let estilo = styles[tipo];
 
   return (
     <>
-      <p className={`${styles.math} ${styles[estilo]}`}>{props.conta}</p>
+      <p className={`${styles.math} ${estilo}`}>{props.conta}</p>
     </>
   );
 }

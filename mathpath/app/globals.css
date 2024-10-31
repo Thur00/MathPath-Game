@@ -36,6 +36,11 @@ body {
   position: relative;
 }
 
+.main {
+  margin: 0 !important;
+  min-height: 100vh;
+}
+
 .func {
   background-color: #fdf0e8;
 }
@@ -45,5 +50,17 @@ body {
 }
 
 .quad {
+  background-color: #ffe3ef;
+}
+
+.funce {
+  background-color: #fdf0e8;
+}
+
+.eqe {
+  background-color: #f0f6ff;
+}
+
+.quade {
   background-color: #ffe3ef;
 }

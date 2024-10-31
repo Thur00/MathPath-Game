@@ -12,6 +12,15 @@ const Footer = (props) => {
     case "quad":
       estilo = "quad";
       break;
+    case "funce":
+      estilo = "func";
+      break;
+    case "eqe":
+      estilo = "eq";
+      break;
+    case "quade":
+      estilo = "quad";
+      break;
     default:
       estilo = "";
   }
