@@ -1,3 +1,4 @@
+//Page.jsx
 import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
@@ -20,7 +21,7 @@ export default function Quest2() {
     {
       id: 3,
       title: "E então isolar o x:",
-      content: "\\(x = 8/2\\)",
+      content: "\\(x = \\frac{8}{2}\\)",
     },
     { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
   ];
@@ -36,12 +37,21 @@ export default function Quest2() {
     case "quad":
       title = "Equação de 2° Grau:";
       break;
+    case "funce":
+      title = "Função:";
+      break;
+    case "eqe":
+      title = "Equação de 1° Grau:";
+      break;
+    case "quade":
+      title = "Equação de 2° Grau:";
+      break;
     default:
       title = "";
   }
 
   return (
-    <main className={tipo}>
+    <main className={`main ${tipo}`}>
       <Header tipo={tipo} />
       <div className="div">
         <h1>{title}</h1>

@@ -23,7 +23,7 @@ export default function Quest1() {
       title: "E então isolar o x:",
       content: "\\(x = \\frac{8}{2}\\)",
     },
-    { id: 4, title: "Calculando:", content: `\\(x = 4\\)` },
+    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
   ];
 
   let title;
@@ -37,12 +37,21 @@ export default function Quest1() {
     case "quad":
       title = "Equação de 2° Grau:";
       break;
+    case "funce":
+      title = "Função:";
+      break;
+    case "eqe":
+      title = "Equação de 1° Grau:";
+      break;
+    case "quade":
+      title = "Equação de 2° Grau:";
+      break;
     default:
       title = "";
   }
 
   return (
-    <main className={tipo}>
+    <main className={`main ${tipo}`}>
       <Header tipo={tipo} />
       <div className="div">
         <h1>{title}</h1>
