@@ -23,7 +23,7 @@ export default function Quest1() {
       title: "E então isolar o x:",
       content: "\\(x = \\frac{8}{2}\\)",
     },
-    { id: 4, title: "Calculando:", content: `\\(x = 4\\)` },
+    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
   ];
 
   let title;
@@ -42,7 +42,7 @@ export default function Quest1() {
   }
 
   return (
-    <main className={tipo}>
+    <main className={`main ${tipo}`}>
       <Header tipo={tipo} />
       <div className="div">
         <h1>{title}</h1>

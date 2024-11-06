@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import Image from "next/image";
 import preto from "../src/Mathpath-Title-preto.png"
+import branco from "../src/Mathpath-Title-branco.png"
 
 const Footer = (props) => {
   let estilo;
@@ -31,7 +32,7 @@ const Footer = (props) => {
     <footer className={`${styles.footer} ${styles[estilo]}`}>
       <Image
         className={styles.logo}
-        src={preto}
+        src={branco}
         alt="MathPath logo"
         width={110.5}
         height={32}

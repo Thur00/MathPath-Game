@@ -3,7 +3,6 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest15() {
-
   const tipo = "quad";
 
   const contas = [
