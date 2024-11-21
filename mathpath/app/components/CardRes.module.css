@@ -21,6 +21,10 @@
   align-items: center;
 }
 
+.title {
+  max-width: 70%;
+}
+
 .func {
   background-color: #fcb67c71;
 }

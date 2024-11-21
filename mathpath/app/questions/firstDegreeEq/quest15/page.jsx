@@ -4,26 +4,27 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  
-  const tipo = "eqe";
+  const tipo = "eq";
 
   const contas = [
     {
       id: 1,
-      title: "Para encontrar o valor de x em",
-      content: "\\(f(x) = 2x + 3 = 11\\)",
+      title: "Para determminar x na equação:",
+      content: "\\( 9x - 4 = 2(x+5) \\)",
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
-      content: "\\(2x = 11 - 3\\)",
+      title: "Faça a distributiva (o “chuveirinho”):",
+      content: "\\(9x -  4 = 2x + 10\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
-      content: "\\(x = \\frac{8}{2}\\)",
+      title: "Isole o x:",
+      content: "\\( 9x - 2x = 10 + 4 \\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    { id: 4, content: "\\( 7x = 14 \\)" },
+    { id: 5, content: "\\(x= \\frac{14}{7}\\)" },
+    { id: 6, content: "\\(x=2\\)" },
   ];
 
   let title;
@@ -35,15 +36,6 @@ export default function Quest() {
       title = "Equação de 1° Grau:";
       break;
     case "quad":
-      title = "Equação de 2° Grau:";
-      break;
-    case "funce":
-      title = "Função:";
-      break;
-    case "eqe":
-      title = "Equação de 1° Grau:";
-      break;
-    case "quade":
       title = "Equação de 2° Grau:";
       break;
     default:

@@ -4,26 +4,33 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  
-  const tipo = "eqe";
+  const tipo = "eq";
 
   const contas = [
     {
       id: 1,
-      title: "Para encontrar o valor de x em",
-      content: "\\(f(x) = 2x + 3 = 11\\)",
+      title: "Para resolver a equação:",
+      content: "\\(2x + 3 = 11\\)",
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
+      title: "Podemos fazer as seguintes manipulações:",
       content: "\\(2x = 11 - 3\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
+      content: "\\(2x = 8\\)",
+    },
+    {
+      id: 4,
+      title:
+        "Como temos o resultado de 2x e queremos só 1, é necessário dividir o valor em dois.",
       content: "\\(x = \\frac{8}{2}\\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    {
+      id: 5,
+      content: "\\(x=4\\)",
+    },
   ];
 
   let title;
@@ -35,15 +42,6 @@ export default function Quest() {
       title = "Equação de 1° Grau:";
       break;
     case "quad":
-      title = "Equação de 2° Grau:";
-      break;
-    case "funce":
-      title = "Função:";
-      break;
-    case "eqe":
-      title = "Equação de 1° Grau:";
-      break;
-    case "quade":
       title = "Equação de 2° Grau:";
       break;
     default:

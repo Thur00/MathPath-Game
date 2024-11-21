@@ -4,26 +4,30 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  
-  const tipo = "eqe";
+  const tipo = "eq";
 
   const contas = [
     {
       id: 1,
-      title: "Para encontrar o valor de x em",
-      content: "\\(f(x) = 2x + 3 = 11\\)",
+      title: "Para encontrar o valor de x em:",
+      content: "\\(4x - 9 = 2x + 15 \\)",
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
-      content: "\\(2x = 11 - 3\\)",
+      title: "É necessário a seguinte manipulação:",
+      content: "\\(4x - 2x  =  15 + 9\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
-      content: "\\(x = \\frac{8}{2}\\)",
+      content: "\\(2x =  24\\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    {
+      id: 4,
+      title:
+        "E como o valor de x está dobrado, é necessário que seja dividido por 2:",
+      content: "\\(x = \\frac{24}{2}\\)",
+    },
+    { id: 5, content: "\\(x=12\\)" },
   ];
 
   let title;
@@ -35,15 +39,6 @@ export default function Quest() {
       title = "Equação de 1° Grau:";
       break;
     case "quad":
-      title = "Equação de 2° Grau:";
-      break;
-    case "funce":
-      title = "Função:";
-      break;
-    case "eqe":
-      title = "Equação de 1° Grau:";
-      break;
-    case "quade":
       title = "Equação de 2° Grau:";
       break;
     default:

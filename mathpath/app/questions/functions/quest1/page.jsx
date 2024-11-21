@@ -14,23 +14,15 @@ export default function Quest() {
     },
     {
       id: 2,
-      title: "Podemos fazer as seguintes manipulações:",
+      title: "Devemos tirar três dos dois lados:",
       content: "\\(2x = 11 - 3\\)",
     },
     {
       id: 3,
-      content: "\\(2x = 8\\)",
-    },
-    {
-      id: 4,
-      title:
-        "TESTTE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      title: "E então isolar o x:",
       content: "\\(x = \\frac{8}{2}\\)",
     },
-    {
-      id: 5,
-      content: "\\(x=4\\)",
-    },
+    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
   ];
 
   let title;

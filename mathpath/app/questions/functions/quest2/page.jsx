@@ -3,8 +3,7 @@ import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
-export default function Quest2() {
-  const formulaTeste = `$$x = {-b \\pm \\sqrt{b^2 - 4 \\times a \\times c} \\over 2a}$$`;
+export default function Quest() {
   const tipo = "eq";
 
   const contas = [

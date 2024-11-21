@@ -10,7 +10,7 @@ const Card = (props) => {
       {contas.map((conta) => {
         return (
           <span className={styles.span} key={conta.id}>
-            <p>{conta.title}</p>
+            <p className={styles.title}>{conta.title}</p>
             <MathComponent tipo={tipo} conta={conta.content} />
           </span>
         );

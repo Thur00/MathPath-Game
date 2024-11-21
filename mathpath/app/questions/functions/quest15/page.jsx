@@ -2,7 +2,7 @@ import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
-export default function Quest15() {
+export default function Quest() {
   const tipo = "quad";
 
   const contas = [
