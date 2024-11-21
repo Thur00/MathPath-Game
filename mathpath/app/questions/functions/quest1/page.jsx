@@ -3,8 +3,7 @@ import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
-export default function Quest1() {
-  const formulaTeste = `$$x = {-b \\pm \\sqrt{b^2 - 4 \\times a \\times c} \\over 2a}$$`;
+export default function Quest() {
   const tipo = "func";
 
   const contas = [
@@ -15,15 +14,23 @@ export default function Quest1() {
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
+      title: "Podemos fazer as seguintes manipulações:",
       content: "\\(2x = 11 - 3\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
+      content: "\\(2x = 8\\)",
+    },
+    {
+      id: 4,
+      title:
+        "TESTTE AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
       content: "\\(x = \\frac{8}{2}\\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    {
+      id: 5,
+      content: "\\(x=4\\)",
+    },
   ];
 
   let title;
