@@ -14,15 +14,16 @@ export default function Quest() {
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
+      title: "Devemos isolar o x para encontrar a solução, então movemos os termos constantes para um lado:",
       content: "\\(2x = 11 - 3\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
-      content: "\\(x = \\frac{8}{2}\\)",
+     content: "\\(f(x)=2x=8\\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    { id: 4, title: "Agora movemos o 2, que passa dividindo:", content: "\\(f(x)=\\frac{8}{2}\\)" },
+  
+      { id: 5,content: "\\(f(x)=4\\)" },
   ];
 
   let title;
