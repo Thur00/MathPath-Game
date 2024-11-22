@@ -4,31 +4,27 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  const tipo = "func";
+  
+  const tipo = "funce";
 
   const contas = [
     {
       id: 1,
-      title: "Se f(0)= -5, qual o valor de b na função:",
-      content: "\\(f(x)=-x^2+ bx -5 = -5\\)",
+      title: "Para encontrar o valor de x em",
+      content: "\\(f(x) = 2x + 3 = 11\\)",
     },
     {
       id: 2,
-      title: "Substitua X por 0 e iguale a equação a -5:  ",
-      content: "\\(f(x)=-0^2+ b \\cdot 0 -5 = -5\\)",
+      title: "Devemos tirar três dos dois lados:",
+      content: "\\(2x = 11 - 3\\)",
     },
     {
       id: 3,
-     content: "\\(f(x)= 0 + 0b -5 = -5\\)",
+      title: "E então isolar o x:",
+      content: "\\(x = \\frac{8}{2}\\)",
     },
-    { id: 4, title: "Após realizar as multiplicações de x, iguale a equação a 0. ",
-      content: "\\(f(x)= 0 + 0 - 5 + 5 = 0\\)",
-}
-    { id: 5, title: "Após realizar as multiplicações de x, iguale a equação a 0. ",
-      content: "\\(f(x)= 0 + 0b + 0 = 0\\),
-},
-    { id: 6, title: "Nesse caso, como multiplicamos o b por 0, significa que, nessa equação,  b pode assumir qualquer valor.",
-    ];
+    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+  ];
 
   let title;
   switch (tipo) {
@@ -39,6 +35,15 @@ export default function Quest() {
       title = "Equação de 1° Grau:";
       break;
     case "quad":
+      title = "Equação de 2° Grau:";
+      break;
+    case "funce":
+      title = "Função:";
+      break;
+    case "eqe":
+      title = "Equação de 1° Grau:";
+      break;
+    case "quade":
       title = "Equação de 2° Grau:";
       break;
     default:

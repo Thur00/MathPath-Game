@@ -1,138 +1,89 @@
+//Page.jsx
 import Card from "@/app/components/CardRes";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  const tipo = "quad";
+  const tipo = "eq";
 
   const contas = [
     {
       id: 1,
-      title: "Podemos começar igualando a função da seguinte maneira:",
-      content: " \\(-x^2 + 2x + 8 = 5\\)",
+      title: "qual o valor de x para f(x)=4",
+      content: "\\(f(x)= x^2-2x+1\\)",
     },
     {
       id: 2,
-      title: "Em seguida subtraia 5 de ambos os lados:",
-      content: "\\(-x^2 + 2x + 8 = 5 \\)",
+      title: "Iguale a equação a 4",
+      content: "\\(f(x)= x^2-2x+1=4\\)",
     },
     {
       id: 3,
-      content: "\\(-x^2 + 2x + 3 = 0\\)",
+      title: "Reorganize os termos",
+      content: "\\(f(x)= x^2-2x+1-4=0\\)",
     },
-    {
-      id: 4,
-      title: "Aplicando a fórmula de Bhaskara",
-      content: "se \\(a = -1\\), \\(b = 2\\) e \\(c = -2 \\)",
-    },
-    {
-      id: 5,
-      content:
-        "\\(x = \\frac{-2 \\pm \\sqrt{2^2 - 4 \\cdot (-1) \\cdot (3)}}{2 \\cdot (-1)}\\)",
-    },
-    {
+    { id: 4, content: "\\(f(x)= x^2-2x-3=0\\)" },
+
+    { id: 5, 
+     title: "Aplique a fórmula de Bhaskara",
+      content: "\\(x = \\frac{-b \\pm \\sqrt{b^2 - 4 \\cdot a \\cdot c}}{2 \\cdot a}\\)"},
+
+      {
       id: 6,
-      content: "\\(x = \\frac{-2 \\pm \\sqrt{4 + 12}}{-2}\\)",
-    },
-    {
+      title: "E considerando os valores:",
+      content: "\\(a=1 \\text{, } b=-2 \\text{ e } c=-3\\)"},
+
+    { 
       id: 7,
-      content: "\\(x = \\frac{-2 \\pm \\sqrt{16}}{-2}\\)",
+      title: "Substitua os valores e resolva:",
+      content:
+        "\\(x = \\frac{-(-2) \\pm \\sqrt{(-2)^2 + 12 \\cdot a \\cdot c}}{2 \\cdot a}\\)",
     },
-    {
-      id: 8,
-      title: "Solução 1:",
-      content: "\\(x_1 = \\frac{-2 + 4}{-2} = \\frac{2}{-2} = -1 \\)",
+
+    {     id: 8,
+      content: "\\(x = \\frac{2 \\pm \\sqrt{4 + 12}}{2}\\)",
     },
-    {
+
+     {
       id: 9,
-      title: "Solução 2:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
+      content: "\\(x = \\frac{2 \\pm \\sqrt{16}}{2}\\)",
+    }, 
+
     {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
+      id: 10,
+      content: "\\(x = \\frac{2 \\pm 4}{2}\\)",
     },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
+
+     {
+      id: 11,
+      title: "E então:",
+      content: "\\(x_1 = \\frac{2 + 4}{2}\\)",
     },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
+       {
+      id: 12,
+      content: "\\(x_1 = \\frac{6}{2} = 3\\)",
     },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
+
+     {
+      id: 13,
+      content: "\\(x_2 = \\frac{2 - 4}{2}\\)",
     },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
+        {
+      id: 14,
+      content: "\\(x_2 = \\frac{-2}{2} = -1  \\)",
     },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
-    {
-      id: 1111,
-      title: "aaaaaa:",
-      content: "\\(x_2 = \\frac{-2 - 4}{-2} = \\frac{-6}{-2} = 3 \\)",
-    },
+
+
+
+
+
+
+
+
+    
+
+
+     
   ];
 
   let title;
