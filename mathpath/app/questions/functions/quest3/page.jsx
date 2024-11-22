@@ -10,20 +10,20 @@ export default function Quest() {
   const contas = [
     {
       id: 1,
-      title: "Para encontrar o valor de x em",
-      content: "\\(f(x) = 2x + 3 = 11\\)",
+      title: "sendo x=2, determine o resultado da função:",
+      content: "\\(f(x)=3x-7\\)\\)",
     },
     {
       id: 2,
-      title: "Devemos tirar três dos dois lados:",
-      content: "\\(2x = 11 - 3\\)",
+      title: "Substitua x por 2",
+      content: "\\(f(x)= 3 \\cdot 2 -7\\)",
     },
     {
       id: 3,
-      title: "E então isolar o x:",
-      content: "\\(x = \\frac{8}{2}\\)",
+      title: "E então resolva normalmente:",
+      content: "\\(f(x)= 6-7\\)",
     },
-    { id: 4, title: "Calculando:", content: "\\(x = 4\\)" },
+    { id: 4, title: "Calculando:", content: "\\(f(x)=-1\\)" },
   ];
 
   let title;
