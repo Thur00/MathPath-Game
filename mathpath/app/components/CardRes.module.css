@@ -19,10 +19,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .title {
-  max-width: 70%;
+  max-width: 30%;
 }
 
 .func {
