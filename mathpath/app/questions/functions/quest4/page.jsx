@@ -9,27 +9,27 @@ export default function Quest() {
   const contas = [
     {
       id: 1,
-      title: "Se f(0)= -5, qual o valor de b na função:",
-      content: "\\(f(x)=-x^2+ bx -5 = -5\\)",
+      title: "Para descobrir o valor de b na função:",
+      content: "\\(f(x)=-x^2+ bx -5\\)",
     },
     {
       id: 2,
-      title: "Substitua X por 0 e iguale a equação a -5:  ",
-      content: "\\(f(x)=-0^2+ b \\cdot 0 -5 = -5\\)",
+      title: "Se f(0) = -5, primeiro substitua x por 0 e iguale a equação a -5:  ",
+      content: "\\(f(0)=-0^2+ b \\cdot 0 -5 = -5\\)",
     },
     {
       id: 3,
-      content: "\\(f(x)= 0 + 0b -5 = -5\\)",
+      content: "\\(f(0)= 0 + 0b -5 = -5\\)",
     },
     {
       id: 4,
       title: "Após realizar as multiplicações de x, iguale a equação a 0. ",
-      content: "\\(f(x)= 0 + 0 - 5 + 5 = 0\\)",
+      content: "\\(f(0)= 0 + 0 - 5 + 5 = 0\\)",
     },
     {
       id: 5,
       title: "Após realizar as multiplicações de x, iguale a equação a 0. ",
-      content: "\\(f(x)= 0 + 0b + 0 = 0\\)",
+      content: "\\(f(0)= 0 + 0b + 0 = 0\\)",
     },
     {
       id: 6,

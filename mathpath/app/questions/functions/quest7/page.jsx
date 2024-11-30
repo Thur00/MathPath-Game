@@ -4,12 +4,12 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  const tipo = "eq";
+  const tipo = "func";
 
   const contas = [
     {
       id: 1,
-      title: "qual o valor de x para f(x)=4",
+      title: "A partir daq nao feito",
       content: "\\(f(x)= x^2-2x+1\\)",
     },
     {

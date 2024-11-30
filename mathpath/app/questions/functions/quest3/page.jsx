@@ -5,7 +5,7 @@ import Header from "@/app/components/Header";
 
 export default function Quest() {
   
-  const tipo = "quad";
+  const tipo = "func";
 
   const contas = [
     {

@@ -4,7 +4,7 @@ import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 
 export default function Quest() {
-  const tipo = "eq";
+  const tipo = "func";
 
   const contas = [
     {
